@@ -1,0 +1,62 @@
+@font-face {
+  font-family: 'flight';
+  src: url('./assets/fonts/Flight.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'arcade';
+  src: url('./assets/fonts/Arcade.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.App-header {
+  background-color: #282c34;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  padding: 2%;
+  height: 300px;
+}
+
+.App-header > img {
+  border-radius: 50%;
+  margin-left: 2%;
+  width: 15%;
+  height: auto;
+}
+
+h1 {
+  font-family: 'flight', sans-serif;
+}
+
+h2 {
+  font-family: 'arcade', sans-serif;
+  font-size: 60px;
+}
+
+.icons a {
+  color: #0077b5; 
+  margin: 10px; 
+}
+
+.icons a:hover svg {
+  color: white;
+}
+
+.icon-large {
+  font-size: 2em;
+}
+
+.informations {
+  margin-left: 5%;
+}
+
+.formation{
+  background-color: #282c34;
+  padding: 2%;
+  display: flex;
+  justify-content: center;
+}

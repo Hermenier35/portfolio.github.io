@@ -1,0 +1,30 @@
+.card {
+    background-color: #364d79;
+    display: flex;
+    justify-content: center;
+    height: 400px;
+}
+
+.card h2{
+    font-size: 48px;
+    margin: 0; 
+    padding-top: 10%; 
+    line-height:normal; 
+    color: #282c34;
+}
+
+h3 {
+    color: #282c34;
+}
+
+@keyframes rotate {
+    from { transform: rotateY(0deg); }
+    to { transform: rotateY(360deg); }
+  }
+
+.image {
+    width: 20%;
+    border-radius: 30%;
+    padding: 2%;
+    animation: rotate 5s infinite linear;
+}
