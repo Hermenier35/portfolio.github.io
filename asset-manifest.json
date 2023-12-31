@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/portfolio.github.io/static/css/main.dd6600ab.chunk.css",
+    "main.js": "/portfolio.github.io/static/js/main.2a05cdba.chunk.js",
+    "main.js.map": "/portfolio.github.io/static/js/main.2a05cdba.chunk.js.map",
+    "runtime~main.js": "/portfolio.github.io/static/js/runtime~main.60d5753a.js",
+    "runtime~main.js.map": "/portfolio.github.io/static/js/runtime~main.60d5753a.js.map",
+    "static/js/2.7c0df317.chunk.js": "/portfolio.github.io/static/js/2.7c0df317.chunk.js",
+    "static/js/2.7c0df317.chunk.js.map": "/portfolio.github.io/static/js/2.7c0df317.chunk.js.map",
+    "static/js/3.8f08ea35.chunk.js": "/portfolio.github.io/static/js/3.8f08ea35.chunk.js",
+    "static/js/3.8f08ea35.chunk.js.map": "/portfolio.github.io/static/js/3.8f08ea35.chunk.js.map",
+    "index.html": "/portfolio.github.io/index.html",
+    "precache-manifest.09f76d060d0dccc8df8d59ee4cd0e6ff.js": "/portfolio.github.io/precache-manifest.09f76d060d0dccc8df8d59ee4cd0e6ff.js",
+    "service-worker.js": "/portfolio.github.io/service-worker.js",
+    "static/css/main.dd6600ab.chunk.css.map": "/portfolio.github.io/static/css/main.dd6600ab.chunk.css.map",
+    "static/media/App.css": "/portfolio.github.io/static/media/Flight.3439bd6e.otf",
+    "static/media/pio.jpeg": "/portfolio.github.io/static/media/pio.d2f5f3f1.jpeg",
+    "static/media/test.jpg": "/portfolio.github.io/static/media/test.a7bb9524.jpg"
+  }
+}
