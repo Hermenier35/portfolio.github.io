@@ -12,6 +12,7 @@ import Contact from './components/ContactComp';
 function App() {
   return (
     <div className="App">
+      <title>Portfolio</title>
       <header className="App-header">
         <img src={Profil} alt="profil" />
         <div className='informations'>

@@ -90,10 +90,12 @@ class ProjectComp extends React.Component<{}, ProjectCompState> {
       return (
         <div key={index}>
           <div className='card'>
-            <img className='image' src={imageSrc} alt={projectTitle} />
             <div>
               <h2>{projectTitle}</h2>
               <p dangerouslySetInnerHTML={{ __html: projectDescription }}></p>
+            </div>
+            <img className='image' src={imageSrc} alt={projectTitle} />
+            <div>
               <h3>Compétences:</h3>
               <p dangerouslySetInnerHTML={{ __html: projectCompetences }}></p>
               <a href= {projectLien} target="_blank" rel="noopener noreferrer">Voir le dépot</a>
