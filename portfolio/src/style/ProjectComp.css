@@ -32,3 +32,35 @@ h3 {
     padding: 2%;
     animation: rotate 5s infinite linear;
 }
+
+@media screen and (max-width: 600px) {
+
+    .image {
+        width: 20%;
+        height: 100px;
+        border-radius: 30%;
+        padding: 2%;
+        animation: rotate 5s infinite linear;
+    }
+
+    .card {
+        background-color: #364d79;
+        display: flex;
+        text-align: center;
+        align-items: center;
+        flex-direction: column;
+        height: 500px;
+    }
+
+    .card h2{
+        font-size: 32px;
+        margin: 0; 
+        padding-top: 10%; 
+        line-height:normal; 
+        color: #282c34;
+    }
+
+    .card h3{
+        padding-top: 1%;
+    }
+}

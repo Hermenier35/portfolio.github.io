@@ -60,3 +60,27 @@ h2 {
   display: flex;
   justify-content: center;
 }
+
+@media screen and (max-width: 600px) {
+  .App-header {
+    background-color: #282c34;
+    color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 2%;
+    height: auto;
+  }
+
+  .App-header > img {
+    border-radius: 50%;
+    width: 30%;
+    height: auto;
+  }
+
+  h2 {
+    font-family: 'arcade', sans-serif;
+    font-size: 30px;
+  }
+}
