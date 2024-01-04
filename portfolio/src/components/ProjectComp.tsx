@@ -15,6 +15,8 @@ interface Project {
   competences: string;
   lien: string;
   image: string;
+  pages:boolean;
+  url_page?:string
 }
 
 class ProjectComp extends React.Component<{}, ProjectCompState> {
@@ -64,13 +66,18 @@ class ProjectComp extends React.Component<{}, ProjectCompState> {
           const competencesMatch = readmeContent.match(/## Competences\n([\s\S]*?)(?=\n## |\n$)/);
           const lienMatch = repo.html_url;
           const img = `https://raw.githubusercontent.com/Hermenier35/${repo.name}/${repo.default_branch}/screen.png`
+          const page = repo.has_pages;
+          const url = `https://hermenier35.github.io/${repo.name}`
+
   
           return {
             title: titleMatch ? titleMatch[1] : 'No Title',
             description: descriptionMatch ? descriptionMatch[1] : 'No Description',
             competences: competencesMatch ? competencesMatch[1] : 'No Competences',
             lien: lienMatch ? lienMatch : 'No Lien',
-            image: img
+            image: img,
+            pages:page,
+            url_page: url
             };
         }
       }));
@@ -92,7 +99,7 @@ class ProjectComp extends React.Component<{}, ProjectCompState> {
         return null;
       }
   
-      const { title, description, competences, lien, image } = project;
+      const { title, description, competences, lien, image, pages, url_page } = project;
       const imageSrc = image || Test; 
       const projectTitle = title || 'No Title';
       const projectDescription = description || 'No Description';
@@ -109,7 +116,8 @@ class ProjectComp extends React.Component<{}, ProjectCompState> {
             <div className='side'>
               <h3>Compétences:</h3>
               <p dangerouslySetInnerHTML={{ __html: projectCompetences }}></p>
-              <a href= {projectLien} target="_blank" rel="noopener noreferrer">Voir le dépot</a>
+              <a href= {projectLien} target="_blank" rel="noopener noreferrer">Voir le dépot</a> <br />
+              {pages? <a href= {url_page} target= "_blank" rel="noopener noreferrer">Git page</a> : null}
             </div>
           </div>
         </div>
