@@ -1,8 +1,17 @@
 .card {
     background-color: #364d79;
     display: flex;
+    flex-direction: row;
     justify-content: center;
+    text-align: center;
     height: 400px;
+}
+
+.card .side {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: auto;
+    width: 20%;
 }
 
 .card h2{
@@ -21,46 +30,53 @@ h3 {
     color: #282c34;
 }
 
-@keyframes rotate {
-    from { transform: rotateY(0deg); }
-    to { transform: rotateY(360deg); }
-  }
-
 .image {
     width: 20%;
-    border-radius: 30%;
+    height: 80%;
+    border: 5px black;
+    border-radius: 15%;
     padding: 2%;
-    animation: rotate 5s infinite linear;
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: auto;
 }
 
 @media screen and (max-width: 600px) {
 
     .image {
-        width: 20%;
-        height: 100px;
-        border-radius: 30%;
-        padding: 2%;
-        animation: rotate 5s infinite linear;
+        width: 40%;
+        height: 200px;
+        border-radius: 20px;
+        margin-top: 0;
+        padding: 1%;
     }
 
     .card {
         background-color: #364d79;
         display: flex;
-        text-align: center;
         align-items: center;
         flex-direction: column;
-        height: 500px;
+        height: 650px;
+    }
+
+    .card .side {
+        flex-grow: 1;
+        flex-shrink: 1;
+        flex-basis: auto;
+        text-align: start;
+        width: 90%;
+        height: auto;
     }
 
     .card h2{
         font-size: 32px;
         margin: 0; 
-        padding-top: 10%; 
+        padding-top: 5%; 
         line-height:normal; 
         color: #282c34;
     }
 
     .card h3{
-        padding-top: 1%;
+        padding-top: 0;
     }
 }

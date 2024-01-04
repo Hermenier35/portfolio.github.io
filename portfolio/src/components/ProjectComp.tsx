@@ -18,6 +18,9 @@ interface Project {
 }
 
 class ProjectComp extends React.Component<{}, ProjectCompState> {
+
+  carouselRef = React.createRef<any>();
+
   constructor(props: {}) {
     super(props);
     this.state = {
@@ -28,6 +31,14 @@ class ProjectComp extends React.Component<{}, ProjectCompState> {
 
   componentDidMount() {
     this.fetchGitHubRepos();
+    setTimeout(() => {
+      if (this.carouselRef.current) {
+        const focusableElement = this.carouselRef.current.querySelector('button, a, input, [tabindex]');
+        if (focusableElement) {
+          focusableElement.focus();
+        }
+      }
+    }, 0);
   }
 
   fetchGitHubRepos = async () => {
@@ -90,12 +101,12 @@ class ProjectComp extends React.Component<{}, ProjectCompState> {
       return (
         <div key={index}>
           <div className='card'>
-            <div>
+            <div className='side'>
               <h2>{projectTitle}</h2>
               <p dangerouslySetInnerHTML={{ __html: projectDescription }}></p>
             </div>
             <img className='image' src={imageSrc} alt={projectTitle} />
-            <div>
+            <div className='side'>
               <h3>Compétences:</h3>
               <p dangerouslySetInnerHTML={{ __html: projectCompetences }}></p>
               <a href= {projectLien} target="_blank" rel="noopener noreferrer">Voir le dépot</a>
