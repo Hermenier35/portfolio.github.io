@@ -12,6 +12,12 @@
     flex-shrink: 1;
     flex-basis: auto;
     width: 20%;
+    a {
+        color: #282c34;
+    }
+    a:hover{
+        color: white;
+    }
 }
 
 .card h2{
